@@ -1,0 +1,130 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Header Section */
+header {
+    background: linear-gradient(to left, #97a7a5, #274d64);
+    color: white;
+    padding: 80px 0;
+}
+/* Image styling in header */
+.header-img {
+    background: url('') no-repeat center center/cover;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Section Styling */
+.section {
+    padding: 60px 0;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* Benefits Section */
+.benefit-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.benefit-card {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+    min-width: 250px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.benefit-card h3 {
+    font-size: 22px;
+    color: #272751;
+    margin-bottom: 15px;
+}
+
+.benefit-card p {
+    font-size: 16px;
+    color: #555;
+}
+
+.benefit-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Fields Section */
+.fields-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.field-item {
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.field-item h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.field-item p {
+    font-size: 16px;
+    color: #555;
+}
+
+.field-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}

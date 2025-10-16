@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>College Signup</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <!-- Signup Form Section -->
+    <section id="signup" class="signup-section">
+        <div class="container">
+            <h2>Sign Up for Govt. Sadiq Graduate College of Commerce Bahawalpur</h2>
+            <p>Join our community and start your educational journey!</p>
+
+            <form id="signup-form" action="submit-signup.php" method="POST">
+                <!-- Personal Information -->
+                <div class="form-group">
+                    <label for="first_name">First Name:</label>
+                    <input type="text" id="first_name" name="first_name" placeholder="Your First Name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="last_name">Last Name:</label>
+                    <input type="text" id="last_name" name="last_name" placeholder="Your Last Name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+
+                <!-- Department Selection -->
+                <div class="form-group">
+                    <label for="department">Department:</label>
+                    <select id="department" name="department" required>
+                        <option value="">Select your department</option>
+                        <option value="computer_science">Bachelor of Information Technology</option>
+                        <option value="business">Bachelor of Business Administration</option>
+                        <option value="engineering">Bachelor of Commerce</option>
+                        <!-- Add more departments as needed -->
+                    </select>
+                </div>
+
+                <!-- Password -->
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Create a Password" required>
+                    <div id="password-strength" class="password-strength">
+                        <p>Password strength: <span id="strength">Weak</span></p>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm_password">Confirm Password:</label>
+                    <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password" required>
+                </div>
+
+                <!-- Terms and Conditions -->
+                <div class="form-group">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the <a href="#">Terms and Conditions</a></label>
+                </div>
+
+                <button type="submit" class="btn">Sign Up</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; copyright onwer 2024 M Umar Farooq [ Govt. Sadiq Graduate College of Commerce Bahawalpur]. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

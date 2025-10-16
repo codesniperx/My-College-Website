@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BS IT Project</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Scrolling Text Container -->
+    <div class="scrolling-container">
+        <div class="scrolling-text">
+            <span>Wellcome to </span> Information<span> Technology</span> , <span> workspace.com</span> ||
+            <span>Creat</span>, by a Student Of BS(IT) 5th Samater. M. Umar Farooq
+        </div>
+    </div>
+    <script>
+
+    </script>
+    <header>
+        <div class="logo">
+            <img src="Logo/sadiq_transparent.gif" alt="No image Found">
+
+            <h1>Govt. Sadiq Graduate College of<br>Commerce Bahawalpur</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="Course contant/course.html">Course contant</a></li>
+                <li>
+                    <a href="programs.html">Programs +</a>
+                    <ul class="dropdown">
+                        <li><a href="Program drop down/IT page.html">Bachelor of Information Technology </a></li>
+                        <li><a href="Program drop down/Bachelor of Business Administration.html">Bachelor of Business
+                                Administration</a>
+                        </li>
+                        <li><a href="Program drop down/Bachelor of Commerce.html">Bachelor of Commerce</a></li>
+                    </ul>
+                </li>
+                <li><a href="About Professsor/About Teacher.html">About Teachers</a></li>
+
+                <li> <a href="Signup page/contact.html"><button>Signup</button></a>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+
+    <section id="home" class="hero">
+        <h2>Welcome to BS Information Technology department</h2>
+
+        <p>.</p>
+    </section>
+
+    <!-- Departments Section -->
+    <section id="departments" class="content">
+        <h2>Departments</h2>
+        <div class="departments-grid">
+            <div class="department">
+                <h3>BS Information Technology</h3>
+                <p>Innovating the future through technology.</p>
+            </div>
+            <div class="department">
+                <h3>BS Commerce</h3>
+                <p>Developing global business leaders.</p>
+            </div>
+            <div class="department">
+                <h3>Bachelor of Business Administration </h3>
+                <p>Building tomorrow's infrastructure.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="content gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-images">
+            <img src="Gallery/images.jpg" alt="Campus Image 1">
+            <img src="Gallery/Govt.-Graduate-College-Of-Commerce-Gujrat-2-convert.io_-1024x768.webp"
+                alt="Campus Image 2">
+            <img src="Slide-01.jpg" alt="Campus Image 3">
+        </div>
+    </section>
+    <!-- Slider Container -->
+    <div class="slider-container">
+        <img src="scrol.jpg" class="slides" alt="Image 1">
+        <img src="scrol1.jpg" class="slides" alt="Image 2">
+        <img src="scrol3.jpg" class="slides" alt="Image 3">
+
+        <!-- Text overlay for slides -->
+        <div class="text-overlay"></div>
+    </div>
+
+    <!-- Dots for navigation -->
+    <div class="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <!-- JavaScript for Slider Animation -->
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("slides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active-dot", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active-dot";
+            setTimeout(showSlides, 4000); // Change image every 4 seconds
+        }
+
+        function currentSlide(n) {
+            slideIndex = n;
+            showSlides();
+        }
+        </script>
+
+        <section>    
+    <h1> Choose your future right </h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/zqIoqQPL05M?si=oLKFGcDMOpbzB_Mw"
+    title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+</section>
+
+    <!-- Footer -->
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Company Info -->
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>
+                    Govt Sadiq College of Commerce is an oldest educational institution of Bahawalpur. Its foundation
+                    was laid by Nawab Sir Sadiq Muhammad Khan Abbasi in 1945.
+
+                </p>
+            </div>
+
+            <!-- Links -->
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Media -->
+            <div class="footer-section links">
+                <h3>Follow us </h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Linkdein</a></li>
+                    <li><a href="#">Tiktok</a></li>
+                </ul>
+            </div>
+            <!-- Contact Info -->
+            <div class="footer-section contact">
+                <h3>Contact Info</h3>
+                <p>Email: <a href="mailto:info@example.com">umarit112@gmail.com</a></p>
+                <p>Phone: 03156651556</p>
+                <p>Address: 9JRV+GJJ Cheema Town, Fazal Colony, Bahawalpur, Punjab</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 GCCBWP. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
